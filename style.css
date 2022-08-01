@@ -1,0 +1,115 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+    background: #282828;
+}
+.clock
+{
+    height: 300px;
+    width: 300px;
+    border: 7px solid #282828;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+                inset 4px 4px 10px rgba(0,0,0, 0.5),
+                inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+                4px 4px 10px rgba(0,0,0, 0.3);
+}
+
+.outer-clock-face
+{
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    height: 95%;
+    width: 95%;
+    border-radius: 50%;
+    background: #28282800;
+}
+.line
+{
+    border: 2px solid white;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+ .line1
+ {
+    border-color: cyan;
+    transform: rotate(90deg);
+ }
+ .line2
+ {
+    border-color: cyan;
+ }
+ .line3
+ {
+    transform: rotate(30deg);
+ }
+ .line4
+ {
+    transform: rotate(60deg);
+ }
+ .line5
+ {
+    transform: rotate(120deg);
+ }
+ .line6
+ {
+    transform: rotate(150deg);
+ }
+
+ .inner-clock-face
+ {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background: #282828;
+ }
+
+ .hand 
+ {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transform-origin: 0%;
+   background: white;
+ }
+ .hour
+ {
+   height: 5px;
+   width:25%;
+ }
+ .min
+ {
+   height: 4px;
+   width:35%;
+   background: cyan;
+ }
+ .second
+ {
+   height: 3px;
+   background: red;
+   width:45%;
+ }
+.dot
+{
+   height: 15px;
+   width: 15px;
+   background-color:#3d3d3d;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
